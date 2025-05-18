@@ -10,7 +10,7 @@ export const getDomainInfoFromAPI = async (req: Request, res: Response, next: Ne
 
         res.status(200).json({
             success: true,
-            WhoisRecord: whoisRecord,
+            vwaran_API: whoisRecord,
         })
     } catch(error){
        next(error);
