@@ -5,7 +5,7 @@ import { domainRateLimiter } from "../../middleware/rateLimiter";
 
 const route = Router();
 
-route.get('/domain', domainRateLimiter, getDomainInfoFromAPI);
+route.get('/domain', getDomainInfoFromAPI); // domainRateLimiter
 
 export default route;
 
